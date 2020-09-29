@@ -1,78 +1,81 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/PT+Sans?query=PT#standard-styles">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>»</p>
-
-    <header>
-      <nav>
-          <a href="index.html"><img src="mainlogo.img" width="138" height="70" alt="Седона"></a>
-        <ul>
-          <li><a href="">информация</a> </li>
-          <li><a href="">фото и видео</a></li>
-          <li><a href="">карта штата</a></li>
-          <li><a href="">гостиницы</a></li>
-        </ul>
-
-      </nav>
-    </header>
+   <header class="main-header">
+     <nav class="main-navigation-1">
+      <ul class="main-navigation-list-1">
+      <li class="navigation-item1"><a href="">информация</a> </li>
+      <li class="navigation-item2"><a href="">фото и видео</a></li>
+    </ul>
+  </nav>
+  <img class="main-logo" src="img/logo.png" width="138" height="70" alt="Логотип сайта">
+  <nav class="main-navigation-2">
+    <ul class="main-navigation-list-2">
+      <li class="navigation-item3"><a href="">карта штата</a></li>
+      <li class="navigation-item4"><a href="hotels.html">гостиницы</a></li>
+    </ul>
+  </nav>
+</header>
     <main>
         <h1>Выбор гостиницы</h1>
-        <section>Фильтр
+        <div class="search-filter">
             <!-- форма фильтра -->
-        </section>
-        <section>Результаты
-          <h2>Найдено: 3</h2>
-          <ul>
-            <li>сортировка:</li>
-            <li>по цене</li>
-            <li>По типу</li>
-            <li>по рейтингу</li>
-            <li>
-              <button>up</button>
+        </div>
+        <section class="results">
+          <h2 class="headline1">Найдено: 3</h2>
+          <ul class="sort-option">
+            <li class="sort-option-item">сортировка:</li>
+            <li class="sort-option-item">по цене</li>
+            <li class="sort-option-item">По типу</li>
+            <li class="sort-option-item">по рейтингу</li>
+            <li class="sort-option-item">
+              <button class="sort-option-item sort-button-up">up</button>
             </li>
-            <li>
-              <button>down</button>
+            <li class="sort-option-item">
+              <button class="sort-option-item sort-button-down">down</button>
             </li>
           </ul>
-          <ul>
-            <li>
-              <img src="hotel1.img" width="135" height="90" alt="Amara Resort & Spa">
-              <h3>Amara Resort & Spa</h3>
-              <p>гостиница</p>
-              <p>от 4000р.</p>
+          <ul class="sort-list">
+            <li class="sirt-list-item">
+              <img src="img/Amara Resort & Spa.jpg" width="135" height="90" alt="Amara Resort & Spa">
+              <h3 class="hotel-name headline1" >Amara Resort & Spa</h3>
+              <p class="text2">гостиница</p>
+              <p class="text2">от 4000р.</p>
               <button>подробнее</button>
               <button>забронировать</button>
-              <ul>
-                <li>star</li>
-                <li>star</li>
-                <li>star</li>
-                <li>star</li>
-                <li>рейтинг: 8,5</li>
+              <ul class="rating">
+                <li class="rating-item">star</li>
+                <li class="rating-item">star</li>
+                <li class="rating-item">star</li>
+                <li class="rating-item">star</li>
+                <li class="text2 rating-text" >рейтинг: 8,5</li>
               </ul>
 
             </li>
-            <li>
-              <img src="hotel2.img" width="135" height="90" alt="Desert Quail Inn">
-              <h3>Desert Quail Inn</h3>
-              <p>мотель</p>
-              <p>от 3000 р.</p>
+            <li class="sort-list-item">
+              <img src="img/Desert Quail Inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+              <h3 class="hotel-name headline1" >Desert Quail Inn</h3>
+              <p class="text2">мотель</p>
+              <p class="text2">от 3000 р.</p>
               <button>подробнее</button>
               <button>забронировать</button>
-              <ul>
-                <li>star</li>
-                <li>star</li>
-                <li>star</li>
-                <li>рейтинг: 8,9</li>
+              <ul class="rating">
+                <li class="rating-item">star</li>
+                <li class="rating-item">star</li>
+                <li class="rating-item">star</li>
+                <li class="rating-item rating-text">рейтинг: 8,9</li>
               </ul>
             </li>
             <li>
-              <img src="hotel.3" width="135" height="90" alt="Villas at Poco Diablo">
-              <h3>Villas at Poco Diablo</h3>
+              <img src="img/Villas at Poco Diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+              <h3 class="hotel-name headline1">Villas at Poco Diablo</h3>
               <p>апартаменты</p>
               <p>от 2000 р.</p>
               <button>подробнее</button>
@@ -87,28 +90,29 @@
         </section>
 
     </main>
-    <footer>
-      <section>контакты
-        <h2>#visitsedona<br>ТЕЛ:+7(495)666-01-66</h2>
-      </section>
-      <section>social
-        <ul>
-          <li>
+    <footer class="main-footer">
+      <div class="contacts">
+        <p>#visitsedona</p>
+        <p>ТЕЛ:+7(495)666-01-66</p>
+      </div>
+      <div class="socials">
+        <ul class="socals-list">
+          <li class="socials-item">
             <a href="">twitter</a>
           </li>
-          <li>
+          <li class="socials-item">
             <a href="">facebook</a>
           </li>
-          <li>
+          <li class="socials-item">
             <a href="">youtube</a>
           </li>
         </ul>
-      </section>
-      <section>
+      </div>
+      <div class="site-creator">
         <p>website by</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="logo-htmlacademy" width="115" height="41" alt="htmlacademy">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
         </a>
-      </section>
+      </div>
     </footer>
   </body>
