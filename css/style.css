@@ -176,6 +176,9 @@ ul {
   grid-template-rows: 256px;
 
 }
+.features-item__list:last-child {
+  background-color: var(--basic-gray);
+}
 
 .features-item:nth-child(3) {
   display: grid;
