@@ -176,6 +176,7 @@ ul {
   grid-template-rows: 256px;
 
 }
+
 .features-item__list:last-child {
   background-color: var(--basic-gray);
 }
@@ -237,6 +238,24 @@ ul {
 }
 
 /*Hotels*/
+.sort-box {
+  display: flex;
+
+
+
+}
+.sort-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+.sort-option__item {
+  font-size: 12px;
+  line-height: 18px;
+}
 .sort-list {
   display: flex;
   flex-wrap: wrap;
@@ -249,27 +268,55 @@ ul {
   display: flex;
   flex-grow: 1;
   width: 1200px;
-  justify-content: space-between;
+  justify-content: flex-start;
+
+}
+.sort__title {
+  margin-right: 10px;
+}
+
+.hotel-link {
+  min-width: 300px;
 }
 
 .sort-list__image {
   width: 135px;
   height: 90;
   margin-left: 73px;
+  margin-right: 30px;
 }
 
 .sort-list__content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
   width: 300px;
 
 }
 
-.sort-option__item {
-  font-size: 12px;
-  line-height: 18px;
+.sort-list__content_block {
+  margin-right: 10px;
+  padding: 5px;
 }
+
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.rating__list {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
 
 .detail,
 .booking {

@@ -32,19 +32,21 @@
       <!-- форма фильтра -->
     </div>
     <section class="results">
-      <h2 class="results__title text_big">Найдено: 3</h2>
-      <ul class="sort-option">
-        <li class="sort-option__item">сортировка:</li>
-        <li class="sort-option__item">по цене</li>
-        <li class="sort-option__item">По типу</li>
-        <li class="sort-option__item">по рейтингу</li>
-        <li class="sort-option__item">
-          <button class="sort-option-item sort-button-up">up</button>
-        </li>
-        <li class="sort-option-item">
-          <button class="sort-option-item sort-button-down">down</button>
-        </li>
-      </ul>
+      <div class="sort-box">
+        <h2 class="sort__title text_big">Найдено: 3</h2>
+        <ul class="sort-option">
+          <li class="sort-option__item">сортировка:</li>
+          <li class="sort-option__item">по цене</li>
+          <li class="sort-option__item">По типу</li>
+          <li class="sort-option__item">по рейтингу</li>
+          <li class="sort-option__item">
+            <button class="sort-option-item sort-button-up">up</button>
+          </li>
+          <li class="sort-option-item">
+            <button class="sort-option-item sort-button-down">down</button>
+          </li>
+        </ul>
+      </div>
       <ul class="sort-list">
         <li class="sort-list__item">
           <h3 class="visually-hidden">Amara Resort & Spa</h3>
@@ -52,18 +54,24 @@
             alt="Amara Resort & Spa">
           <div class="sort-list__content">
             <a class="hotel-link text_big" href="">Amara Resort & Spa</a>
-            <p class="sort-list__text light-black-text">гостиница</p>
-            <p class="sort-list__text light-black-text">от 4000р.</p>
-            <a class="detail white-text" href="">подробнее</a>
-            <a class="booking white-text" href="">забронировать</a>
+            <div class="sort-list__content_block">
+              <p class="sort-list__text light-black-text">гостиница</p>
+              <a class="detail white-text" href="">подробнее</a>
+            </div>
+            <div class="sort-list__content_block">
+              <p class="sort-list__text light-black-text">от 4000р.</p>
+              <a class="booking white-text" href="">забронировать</a>
+            </div>
           </div>
-          <ul class="rating">
-            <li class="rating__item">*hgk</li>
-            <li class="rating__item"></li>
-            <li class="rating__item"></li>
-            <li class="rating__item"></li>
-          </ul>
-          <p class="rating__text">рейтинг: 8,5</p>
+          <div class="rating">
+            <ul class="rating__list">
+              <li class="rating__item">*</li>
+              <li class="rating__item">*</li>
+              <li class="rating__item">*</li>
+              <li class="rating__item">*</li>
+            </ul>
+            <p class="rating__text">рейтинг: 8,5</p>
+          </div>
 
         </li>
         <li class="sort-list__item">
@@ -71,17 +79,23 @@
           <img class="sort-list__image" src="img/Desert_Quail_Inn.jpg" width="135" height="90" alt="Desert Quail Inn">
           <div class="sort-list__content">
             <a class="hotel-link text_big" href="">Desert Quail Inn</a>
-            <p class="sort-list__text light-black-text">мотель</p>
-            <p class="sort-list__text light-black-text">от 3000 р.</p>
-            <a class="detail white-text" href="">подробнее</a>
-            <a class="booking white-text" href="">забронировать</a>
+            <div class="sort-list__content_block">
+              <p class="sort-list__text light-black-text">мотель</p>
+              <a class="detail white-text" href="">подробнее</a>
+            </div>
+            <div class="sort-list__content_block">
+              <p class="sort-list__text light-black-text">от 3000 р.</p>
+              <a class="booking white-text" href="">забронировать</a>
+            </div>
           </div>
-          <ul class="rating">
-            <li class="rating__item">*</li>
-            <li class="rating__item">*</li>
-            <li class="rating__item">*</li>
-          </ul>
-          <p class="rating__text">рейтинг: 8,9</p>
+          <div class="rating">
+            <ul class="rating__list">
+              <li class="rating__item">*</li>
+              <li class="rating__item">*</li>
+              <li class="rating__item">*</li>
+            </ul>
+            <p class="rating__text">рейтинг: 8,9</p>
+          </div>
 
         </li>
         <li class="sort-list__item">
@@ -90,16 +104,22 @@
             alt="Villas at Poco Diablo">
           <div class="sort-list__content">
             <a class="hotel-link text_big" href="">Villas at Poco Diablo</a>
-            <p class="sort-list__text light-black-text">апартаменты</p>
-            <p class="sort-list__text light-black-text">от 2000 р.</p>
-            <a class="detail white-text" href="">подробнее</a>
-            <a class="booking white-text" href="">забронировать</a>
+            <div class="sort-list__content_block">
+              <p class="sort-list__text light-black-text">апартаменты</p>
+              <a class="detail white-text" href="">подробнее</a>
+            </div>
+            <div class="sort-list__content_block">
+              <p class="sort-list__text light-black-text">от 2000 р.</p>
+              <a class="booking white-text" href="">забронировать</a>
+            </div>
           </div>
-          <ul class="rating">
-            <li class="rating__item"></li>
-            <li class="rating__item"></li>
-          </ul>
-          <p class="rating__text">рейтинг :9,2</p>
+          <div class="rating">
+            <ul class="rating__list">
+              <li class="rating__item">*</li>
+              <li class="rating__item">*</li>
+            </ul>
+            <p class="rating__text">рейтинг :9,2</p>
+          </div>
         </li>
       </ul>
     </section>
