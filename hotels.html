@@ -28,21 +28,84 @@
   </header>
   <main>
     <h1 class="visually-hidden">Выбор гостиницы</h1>
-    <div class="search-filter">
+    <section class="search-filter">
       <!-- форма фильтра -->
-    </div>
+      <form class="search-filter__form white-text" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="infrastructure search__fieldset">
+          <legend class="filter-legend">инфраструктура</legend>
+          <ul class="infrastructure__list search-filter__list">
+            <li class="infrastructure__item search-filter__item">
+              <input class="visually-hidden filter-input" type="checkbox" name="pool" id="pool-field" checked>
+              <label class="filter-label" for="pool-field">бассейн</label>
+            </li>
+            <li class="infrastructure__item search-filter__item">
+              <input class="visually-hidden filter-input" type="checkbox" name="parking" id="parking-field">
+              <label class="filter-label" for="parking-field">парковка</label>
+            </li>
+            <li class="infrastructure__item search-filter__item">
+              <input class="visually-hidden filter-input" type="checkbox" name="internet" id="internet-field">
+              <label class="filter-label" for="internet-field">wi-fi</label>
+            </li>
+
+          </ul>
+
+        </fieldset>
+        <fieldset class="house-type search__fieldset">
+          <legend class="filter-legend">тип жилья:</legend>
+          <ul class="house-type__list search-filter__list">
+            <li class="house-type__item search-filter__item">
+              <input class="visually-hidden filter-input" type="checkbox" name="hotel" id="hotel-field" checked>
+              <label class="filter-label" for="hotel-field">гостиница</label>
+            </li>
+            <li class="house-type__item search-filter__item">
+              <input class="visually-hidden filter-input" type="checkbox" name="motel" id="motel-field" checked>
+              <label class="filter-label" for="motel-field">мотель</label>
+            </li>
+            <li class="house-type__item search-filter__item">
+              <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments-field"
+                checked>
+              <label class="filter-label" for="apartments-field">апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="price-fieldset">
+          <legend class="filter-legend price-legend">стоимость в сутки(Р):</legend>
+          <ul class="price__list">
+            <li class="price__item">
+              <ul class="price-item__list">
+                <li>от 0</li>
+                <li class="filter-line"></li>
+                <li>до 3000</li>
+              </ul>
+            </li>
+            <li class="price__item range">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <input class="range-button white-text" type="submit" name="show" value="показать">
+        </fieldset>
+      </form>
+    </section>
     <section class="results">
       <div class="sort-box">
         <h2 class="sort__title text_big">Найдено: 3</h2>
         <ul class="sort-option">
-          <li class="sort-option__item">сортировка:</li>
-          <li class="sort-option__item">по цене</li>
+          <li class="sort-option__description">сортировка:</li>
+          <li class="sort-option__item active">по цене</li>
           <li class="sort-option__item">По типу</li>
           <li class="sort-option__item">по рейтингу</li>
           <li class="sort-option__item">
             <button class="sort-option-item sort-button-up"></button>
           </li>
-          <li class="sort-option-item">
+          <li class="sort-option__item">
             <button class="sort-option-item sort-button-down"></button>
           </li>
         </ul>
@@ -136,8 +199,10 @@
           <a class="socials__link" href="">
             <p class="visually-hidden">twitter</p>
             <svg width="17" height="17" viewbox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
-              </svg>
+              <path
+                d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
+                fill="white" />
+            </svg>
 
           </a>
         </li>
